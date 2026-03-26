@@ -1,5 +1,5 @@
 import { Progress } from "@/components/ui/progress";
-import axios from "axios";
+import api from "@/lib/api";
 import { useEffect, useState } from "react";
 import { Plus, Target } from "lucide-react";
 
@@ -14,8 +14,8 @@ export const AddGoalUI = ({ goals }) => {
   };
   useEffect(() => {
     const token = localStorage.getItem("token");
-    axios
-      .get("http://localhost:3002/pennypilot/user/getuser", {
+    api
+      .get("/user/getuser", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -32,8 +32,8 @@ export const AddGoalUI = ({ goals }) => {
     e.preventDefault();
     const token = localStorage.getItem("token");
     try {
-      const response = await axios.post(
-        "http://localhost:3002/pennypilot/goal/postgoal",
+      const response = await api.post(
+        "/goal/postgoal",
         { title: name, targetAmount: amount, duration: duration },
         {
           headers: {

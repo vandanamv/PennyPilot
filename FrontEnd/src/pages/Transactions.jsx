@@ -2,7 +2,7 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PageMotion, RevealSection, StaggerGroup } from "@/components/ui/page-motion";
-import axios from "axios";
+import api from "@/lib/api";
 import {
   ArrowDownLeft,
   ArrowUpRight,
@@ -53,8 +53,8 @@ const Transactions = () => {
 
   const fetchUser = async () => {
     try {
-      const response = await axios.get(
-        "http://localhost:3002/pennypilot/user/getUser",
+      const response = await api.get(
+        "/user/getUser",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -70,8 +70,8 @@ const Transactions = () => {
 
   const fetchTransactions = async () => {
     try {
-      const response = await axios.get(
-        "http://localhost:3002/pennypilot/transaction/getTransaction",
+      const response = await api.get(
+        "/transaction/getTransaction",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -123,8 +123,8 @@ const Transactions = () => {
     setIsSubmittingExpense(true);
 
     try {
-      const response = await axios.post(
-        "http://localhost:3002/pennypilot/transaction/send",
+      const response = await api.post(
+        "/transaction/send",
         {
           to: expenseForm.to,
           amount: Number(expenseForm.amount),
@@ -161,8 +161,8 @@ const Transactions = () => {
     setIsSubmittingDeposit(true);
 
     try {
-      const response = await axios.put(
-        "http://localhost:3002/pennypilot/transaction/deposit",
+      const response = await api.put(
+        "/transaction/deposit",
         {
           depositAmount: Number(depositAmount),
         },
@@ -190,8 +190,8 @@ const Transactions = () => {
     setSuccessMessage("");
 
     try {
-      const response = await axios.delete(
-        `http://localhost:3002/pennypilot/transaction/${transactionId}`,
+      const response = await api.delete(
+        `/transaction/${transactionId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

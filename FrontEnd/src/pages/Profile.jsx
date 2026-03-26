@@ -1,4 +1,4 @@
-import axios from "axios";
+import api from "@/lib/api";
 import {
   ChevronDown,
   BellRing,
@@ -136,8 +136,8 @@ const Profile = () => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/user/getUser",
+        const response = await api.get(
+          "/user/getUser",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -156,8 +156,8 @@ const Profile = () => {
   useEffect(() => {
     const fetchWellnessScore = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/priority/wellness",
+        const response = await api.get(
+          "/priority/wellness",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -175,8 +175,8 @@ const Profile = () => {
   useEffect(() => {
     const fetchBudgetLimits = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/budget",
+        const response = await api.get(
+          "/budget",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -203,8 +203,8 @@ const Profile = () => {
     const fetchPriority = async () => {
       const token = localStorage.getItem("token");
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/priority/getpriority",
+        const response = await api.get(
+          "/priority/getpriority",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -285,8 +285,8 @@ const Profile = () => {
     }, {});
 
     try {
-      await axios.post(
-        "http://localhost:3002/pennypilot/priority/postpriority",
+      await api.post(
+        "/priority/postpriority",
         formData,
         {
           headers: {
@@ -294,8 +294,8 @@ const Profile = () => {
           },
         }
       );
-      await axios.post(
-        "http://localhost:3002/pennypilot/budget",
+      await api.post(
+        "/budget",
         {
           daily: Number(budgetLimits.daily || 0),
           weekly: Number(budgetLimits.weekly || 0),
@@ -326,8 +326,8 @@ const Profile = () => {
     setBudgetError("");
 
     try {
-      await axios.post(
-        "http://localhost:3002/pennypilot/budget",
+      await api.post(
+        "/budget",
         {
           daily: Number(budgetLimits.daily || 0),
           weekly: Number(budgetLimits.weekly || 0),

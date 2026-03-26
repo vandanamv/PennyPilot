@@ -1,8 +1,8 @@
 import AuthShell from "@/components/AuthShell";
+import api from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import axios from "axios";
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -21,8 +21,8 @@ const SignInPage = () => {
     setErrorMessage("");
 
     try {
-      const response = await axios.post(
-        "http://localhost:3002/pennypilot/user/signin",
+      const response = await api.post(
+        "/user/signin",
         { mailId, password }
       );
 

@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import axios from "axios";
+import api from "@/lib/api";
 import { ArrowUpRight, BarChart3, ScanSearch, Sparkles, Wallet } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
@@ -43,8 +43,8 @@ export const Analytics = () => {
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/transaction/getTransaction",
+        const response = await api.get(
+          "/transaction/getTransaction",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

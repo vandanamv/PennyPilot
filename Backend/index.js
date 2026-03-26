@@ -1,19 +1,31 @@
 const express = require("express");
 const mainRouter = require("./routes/index");
 const { connectToDatabase } = require("./db");
+require("dotenv").config();
 const app = express();
 const cors = require("cors");
+
+const allowedOrigins = (
+  process.env.FRONTEND_URL || "http://localhost:5173,http://localhost:5174"
+)
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"], // Replace with your frontend origins
+    origin: allowedOrigins,
     credentials: true,
   })
 );
 
 app.use(express.json());
+app.get("/healthz", (_req, res) => {
+  res.status(200).json({ ok: true });
+});
 app.use("/pennypilot", mainRouter);
 
-const PORT = 3002;
+const PORT = process.env.PORT || 3002;
 
 const startServer = async () => {
   try {

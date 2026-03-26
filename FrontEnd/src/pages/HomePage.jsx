@@ -7,7 +7,7 @@ import {
   RevealSection,
   StaggerGroup,
 } from "@/components/ui/page-motion";
-import axios from "axios";
+import api from "@/lib/api";
 import Cookies from "js-cookie";
 import { ArrowUpRight, ShieldCheck, Sparkles, Target, TrendingUp, Wallet } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
@@ -52,8 +52,8 @@ const HomePage = () => {
       const token = localStorage.getItem("token");
 
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/transaction/getTransaction",
+        const response = await api.get(
+          "/transaction/getTransaction",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -95,8 +95,8 @@ const HomePage = () => {
     const fetchUser = async () => {
       const token = localStorage.getItem("token");
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/user/getUser",
+        const response = await api.get(
+          "/user/getUser",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -117,8 +117,8 @@ const HomePage = () => {
     const fetchGoals = async () => {
       const token = localStorage.getItem("token");
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/goal/getgoal",
+        const response = await api.get(
+          "/goal/getgoal",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -136,8 +136,8 @@ const HomePage = () => {
   useEffect(() => {
     const fetchPriority = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/priority/getpriority",
+        const response = await api.get(
+          "/priority/getpriority",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -157,8 +157,8 @@ const HomePage = () => {
   useEffect(() => {
     const fetchBudgetSummary = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3002/pennypilot/budget/summary",
+        const response = await api.get(
+          "/budget/summary",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -178,8 +178,8 @@ const HomePage = () => {
   useEffect(() => {
     const fetchDaily = async () => {
       try {
-        const dailyLimit = await axios.get(
-          "http://localhost:3002/pennypilot/priority/calculateDailyLimit",
+        const dailyLimit = await api.get(
+          "/priority/calculateDailyLimit",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
