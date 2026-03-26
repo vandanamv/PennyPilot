@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Budgeting",
+    "content": "Learn the basics of budgeting and how to create a budget that works for you.",
+    "category": "Money Tips",
+    "risk": "Low",
+    "period": "Short-term"
+  },
+  {
+    "id": 2,
+    "title": "Understanding Mutual Funds",
+    "content": "Explore the benefits of mutual funds and how to choose the right one for your investment goals.",
+    "category": "Investment Plans",
+    "risk": "Medium",
+    "period": "Long-term"
+  },
+  {
+    "id": 3,
+    "title": "Saving Strategies for Millennials",
+    "content": "Discover effective saving strategies tailored for millennials to achieve financial independence.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 4,
+    "title": "Credit Card Management Tips",
+    "content": "Learn how to manage credit cards responsibly and avoid common pitfalls.",
+    "category": "Money Tips",
+    "risk": "Medium",
+    "period": "Short-term"
+  },
+  {
+    "id": 5,
+    "title": "Introduction to Stocks",
+    "content": "Gain an understanding of how stocks work and their role in investment portfolios.",
+    "category": "Investment Plans",
+    "risk": "High",
+    "period": "Long-term"
+  },
+  {
+    "id": 6,
+    "title": "Retirement Planning Essentials",
+    "content": "Essential tips and strategies for planning a secure retirement.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 7,
+    "title": "Debt Repayment Strategies",
+    "content": "Effective strategies for paying off debt and improving financial health.",
+    "category": "Money Tips",
+    "risk": "Medium",
+    "period": "Short-term"
+  },
+  {
+    "id": 8,
+    "title": "Real Estate Investment Basics",
+    "content": "Learn about real estate investment opportunities and how to get started.",
+    "category": "Investment Plans",
+    "risk": "High",
+    "period": "Long-term"
+  },
+  {
+    "id": 9,
+    "title": "Emergency Fund Planning",
+    "content": "Importance of an emergency fund and how to build and maintain one.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 10,
+    "title": "Personal Finance Apps Review",
+    "content": "Explore different apps that can help manage personal finances effectively.",
+    "category": "Money Tips",
+    "risk": "Low",
+    "period": "Short-term"
+  },
+  {
+    "id": 11,
+    "title": "Diversifying Investment Portfolios",
+    "content": "Strategies for diversifying investments to minimize risk and maximize returns.",
+    "category": "Investment Plans",
+    "risk": "Medium",
+    "period": "Long-term"
+  },
+  {
+    "id": 12,
+    "title": "Health Savings Accounts (HSAs)",
+    "content": "Benefits of HSAs and how to use them for healthcare expenses and retirement savings.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 13,
+    "title": "Managing Student Loans",
+    "content": "Tips and strategies for managing and paying off student loans effectively.",
+    "category": "Money Tips",
+    "risk": "Medium",
+    "period": "Short-term"
+  },
+  {
+    "id": 14,
+    "title": "Impact of Inflation on Savings",
+    "content": "Understanding how inflation affects savings and strategies to protect against it.",
+    "category": "Investment Plans",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 15,
+    "title": "Creating a Financial Plan",
+    "content": "Steps to create a comprehensive financial plan tailored to individual goals and circumstances.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 16,
+    "title": "Investing in Renewable Energy Stocks",
+    "content": "Opportunities and considerations for investing in renewable energy stocks.",
+    "category": "Money Tips",
+    "risk": "High",
+    "period": "Long-term"
+  },
+  {
+    "id": 17,
+    "title": "Tax Planning Strategies",
+    "content": "Effective tax planning strategies to minimize tax liabilities and maximize savings.",
+    "category": "Investment Plans",
+    "risk": "Medium",
+    "period": "Short-term"
+  },
+  {
+    "id": 18,
+    "title": "Starting a Side Business",
+    "content": "Tips for starting and managing a successful side business to generate additional income.",
+    "category": "Saving Strategies",
+    "risk": "Medium",
+    "period": "Long-term"
+  },
+  {
+    "id": 19,
+    "title": "Cryptocurrency Investing Basics",
+    "content": "Understanding cryptocurrency investments and their potential risks and rewards.",
+    "category": "Money Tips",
+    "risk": "High",
+    "period": "Long-term"
+  },
+  {
+    "id": 20,
+    "title": "Estate Planning Essentials",
+    "content": "Essential considerations and strategies for effective estate planning.",
+    "category": "Investment Plans",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 21,
+    "title": "Frugal Living Tips",
+    "content": "Practical tips for adopting a frugal lifestyle and saving money on everyday expenses.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Short-term"
+  },
+  {
+    "id": 22,
+    "title": "Understanding Bonds",
+    "content": "Comprehensive guide to understanding bonds and their role in diversified investment portfolios.",
+    "category": "Money Tips",
+    "risk": "Medium",
+    "period": "Long-term"
+  },
+  {
+    "id": 23,
+    "title": "Investing in Index Funds",
+    "content": "Benefits of investing in index funds and how they compare to other investment options.",
+    "category": "Investment Plans",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 24,
+    "title": "Financial Independence Retire Early (FIRE) Movement",
+    "content": "Overview of the FIRE movement and steps to achieve financial independence and retire early.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 25,
+    "title": "Credit Score Improvement Tips",
+    "content": "Strategies to improve and maintain a good credit score for better financial health.",
+    "category": "Money Tips",
+    "risk": "Low",
+    "period": "Short-term"
+  },
+  {
+    "id": 26,
+    "title": "Investing in Real Estate Investment Trusts (REITs)",
+    "content": "Benefits and considerations of investing in REITs as a real estate investment option.",
+    "category": "Investment Plans",
+    "risk": "Medium",
+    "period": "Long-term"
+  },
+  {
+    "id": 27,
+    "title": "Emergency Preparedness Fund",
+    "content": "Importance of emergency preparedness fund and strategies to build and maintain one.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Long-term"
+  },
+  {
+    "id": 28,
+    "title": "Understanding Dividends",
+    "content": "Guide to understanding dividends and their impact on investment portfolios.",
+    "category": "Money Tips",
+    "risk": "Medium",
+    "period": "Long-term"
+  },
+  {
+    "id": 29,
+    "title": "Impact Investing",
+    "content": "Overview of impact investing and how investors can align financial goals with social and environmental impact.",
+    "category": "Investment Plans",
+    "risk": "Medium",
+    "period": "Long-term"
+  },
+  {
+    "id": 30,
+    "title": "Personal Finance for Young Adults",
+    "content": "Essential personal finance tips tailored for young adults entering the workforce and managing finances independently.",
+    "category": "Saving Strategies",
+    "risk": "Low",
+    "period": "Short-term"
+  }
+]
